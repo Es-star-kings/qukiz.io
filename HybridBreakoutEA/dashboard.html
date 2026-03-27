@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>HybridBreakoutEA Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>User Dashboard</h1>
+
+<p>Your license key:</p>
+
+<h2 id="userLicense"></h2>
+
+<a href="downloads/HybridBreakoutEA.ex5">
+
+<button>Download EA</button>
+
+</a>
+
+<script>
+
+let license = localStorage.getItem("license")
+
+document.getElementById("userLicense").innerText = license
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HybridBreakoutEA - Smart Forex Trading Bot</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+    <a class="logo" href="index.html">Hybrid<span>Breakout</span>EA</a>
+
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#results">Results</a>
+        <a href="#gallery">Backtests</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#pricing">Buy</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+
+</div>
+
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Automated Forex Trading Made Simple</h2>
+
+<p>HybridBreakoutEA combines trend and breakout strategies to capture powerful market moves automatically.</p>
+
+<a class="btn" href="#pricing">Get The EA</a>
+
+</div>
+
+</section>
+
+<section id="features" class="features">
+
+<h2>Powerful Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Trend Detection</h3>
+<p>Uses EMA filters to identify strong market direction.</p>
+</div>
+
+<div class="card">
+<h3>Breakout Entries</h3>
+<p>Trades powerful breakouts from consolidation zones.</p>
+</div>
+
+<div class="card">
+<h3>Risk Management</h3>
+<p>Automatic position sizing and stop-loss protection.</p>
+</div>
+
+<div class="card">
+<h3>Session Filter</h3>
+<p>Trades during London & New York sessions only.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="how-it-works">
+
+    <h2>How HybridBreakoutEA Works</h2>
+    
+    <div class="steps">
+    
+    <div class="step">
+    <h3>1. Trend Detection</h3>
+    <p>
+    The EA analyzes market direction using fast and slow EMAs
+    to identify strong trends.
+    </p>
+    </div>
+    
+    <div class="step">
+    <h3>2. Breakout Confirmation</h3>
+    <p>
+    Trades are opened when price breaks recent highs or lows,
+    confirming momentum.
+    </p>
+    </div>
+    
+    <div class="step">
+    <h3>3. Smart Risk Control</h3>
+    <p>
+    ATR-based stop loss and dynamic position sizing
+    protect your account.
+    </p>
+    </div>
+    
+    <div class="step">
+    <h3>4. Profit Protection</h3>
+    <p>
+    A trailing stop locks in profit as the market moves.
+    </p>
+    </div>
+    
+    </div>
+    
+    </section>
+
+<section id="strategy" class="strategy">
+
+<h2>How The Strategy Works</h2>
+
+<p>
+
+The EA identifies market trends using EMA filters, waits for price consolidation, and executes breakout trades when volatility increases.
+
+</p>
+
+</section>
+
+<section id="results" class="results">
+
+<h2>Backtest Results</h2>
+
+<div class="stats">
+
+<div>
+<h3 class="counter">1.66</h3>
+<p>Profit Factor</p>
+</div>
+
+<div>
+<h3 class="counter">5%</h3>
+<p>Max Drawdown</p>
+</div>
+
+<div>
+<h3 class="counter">3.0</h3>
+<p>Risk Reward</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+    <h2>Backtest Performance</h2>
+    
+    <p class="gallery-text">
+    Here are verified strategy tester results showing the EA performance.
+    </p>
+    
+    <div class="gallery-grid">
+    
+    <img src="image/backtest1.png" alt="Backtest result 1">
+    
+    <img src="image/backtest2.png" alt="Backtest result 2">
+    
+    <img src="image/backtest3.png" alt="Backtest result 3">
+    
+    <img src="image/backtest4.png" alt="Backtest result 4">
+    
+    </div>
+    
+    </section>
+
+    <section class="trust">
+
+        <div class="badges">
+        
+        <div>✔ Fully Automated</div>
+        <div>✔ MT5 Compatible</div>
+        <div>✔ Risk Management</div>
+        <div>✔ Backtested Strategy</div>
+        
+        </div>
+        
+        </section>
+
+    <section class="pairs">
+
+        <h2>Supported Trading Pairs</h2>
+        
+        <div class="pairs-grid">
+        
+        <div>EURUSD</div>
+        <div>GBPUSD</div>
+        <div>USDJPY</div>
+        <div>XAUUSD</div>
+        
+        </div>
+        
+        </section>
+
+
+<section class="equity">
+
+    <h2>Equity Curve</h2>
+    
+    <p class="equity-text">
+    Strategy performance based on historical backtests.
+    </p>
+    
+    <canvas id="equityChart"></canvas>
+    
+    </section>
+
+    <section class="stats">
+
+        <div class="stat">
+        <h3 id="trades">0</h3>
+        <p>Total Trades</p>
+        </div>
+        
+        <div class="stat">
+        <h3 id="profit">0</h3>
+        <p>Profit Trades</p>
+        </div>
+        
+        <div class="stat">
+        <h3 id="years">0</h3>
+        <p>Years Tested</p>
+        </div>
+        
+        </section>
+
+    <section class="performance">
+
+        <h2>Performance Metrics</h2>
+        
+        <div class="performance-grid">
+        
+        <div class="metric">
+        <h3>515+</h3>
+        <p>Total Trades</p>
+        </div>
+        
+        <div class="metric">
+        <h3>1.81</h3>
+        <p>Sharpe Ratio</p>
+        </div>
+        
+        <div class="metric">
+        <h3>42%</h3>
+        <p>Win Rate</p>
+        </div>
+        
+        <div class="metric">
+        <h3>99%</h3>
+        <p>Backtest Quality</p>
+        </div>
+        
+        </div>
+        
+        </section>
+
+
+        <section class="calculator" id="calculator">
+
+            <h2>Profit Calculator</h2>
+            
+            <p>Estimate potential growth using HybridBreakoutEA.</p>
+            
+            <div class="calc-box">
+            
+            <label>Initial Deposit ($)</label>
+            <input type="number" id="deposit" value="1000">
+            
+            <label>Monthly Growth (%)</label>
+            <input type="number" id="growth" value="8">
+            
+            <label>Months</label>
+            <input type="number" id="months" value="12">
+            
+            <button onclick="calculateProfit()">Calculate</button>
+            
+            <h3 id="result"></h3>
+            
+            </div>
+            
+            </section>
+
+            <div class="box">
+
+
+            <section id="pricing" class="pricing">
+
+                <h2>Starter Bot</h2>
+                
+                <div class="price-card">
+                
+                <h3>Basic Version</h3>
+                
+                <h1>$49</h1>
+                
+                <ul>
+                
+                <li>1 Year Free License</li>
+                <li>Installation Guide</li>
+                <li>Strategy PDF</li>
+                
+                </ul>
+                
+                <button class="buy" onclick="buyEA()">Buy Now</button>
+                
+                </div>
+                
+                </section>
+                <section id="pricing" class="pricing">
+
+                    <h2>Pro Trader</h2>
+                    
+                    <div class="price-card">
+                    
+                    <h3>Basic Version</h3>
+                    
+                    <h1>$49</h1>
+                    
+                    <ul>
+                    
+                    <li>1 Year Free License</li>
+                    <li>Installation Guide</li>
+                    <li>Strategy PDF</li>
+                    
+                    </ul>
+                    
+                    <button class="buy" onclick="buyEA()">Buy Now</button>
+                    
+                    </div>
+                    
+                    </section>
+
+
+<section id="pricing" class="pricing">
+
+<h2>Advanced Trading Bot</h2>
+
+<div class="price-card">
+
+<h3>Full Version</h3>
+
+<h1>$299</h1>
+
+<ul>
+
+<li>Lifetime License</li>
+<li>Free Updates</li>
+<li>Installation Guide</li>
+<li>Strategy PDF</li>
+
+</ul>
+
+<button class="buy" onclick="buyEA()">Buy Now</button>
+
+</div>
+
+</section>
+
+</div>
+
+<section class="license">
+
+    <h2>Activate Your License</h2>
+    
+    <p>Enter your license key after purchasing the EA.</p>
+    
+    <div class="license-box">
+    
+    <input type="text" id="licenseKey" placeholder="Enter License Key">
+    
+    <button onclick="activateLicense()">Activate</button>
+    
+    <p id="licenseMessage"></p>
+    
+    </div>
+    
+    </section>
+
+    <section class="installation">
+
+        <h2>Installation Guide</h2>
+        
+        <ol>
+        
+        <li>Download the EA after purchase</li>
+        
+        <li>Open your trading platform</li>
+        
+        <li>Copy the EA file into Experts folder</li>
+        
+        <li>Restart the platform</li>
+        
+        <li>Attach the EA to a chart</li>
+        
+        </ol>
+        
+        </section>
+
+
+    <section class="faq" id="faq">
+
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+        
+        <div class="faq-item">
+        
+        <button class="faq-question">
+        What is HybridBreakoutEA?
+        </button>
+        
+        <div class="faq-answer">
+        <p>
+        HybridBreakoutEA is an automated trading bot designed for MetaTrader 5. It combines trend detection and breakout strategies to capture strong market movements automatically.
+        </p>
+        </div>
+        
+        </div>
+        
+        <div class="faq-item">
+        
+        <button class="faq-question">
+        Does the EA work on all brokers?
+        </button>
+        
+        <div class="faq-answer">
+        <p>
+        Yes. The EA works with most MT5 brokers as long as spreads are reasonable and execution speed is stable.
+        </p>
+        </div>
+        
+        </div>
+        
+        <div class="faq-item">
+        
+        <button class="faq-question">
+        What currency pairs does it support?
+        </button>
+        
+        <div class="faq-answer">
+        <p>
+        The EA works best on EURUSD, GBPUSD and XAUUSD on the M15 timeframe.
+        </p>
+        </div>
+        
+        </div>
+        
+        <div class="faq-item">
+        
+        <button class="faq-question">
+        Do I need trading experience?
+        </button>
+        
+        <div class="faq-answer">
+        <p>
+        No. The EA is fully automated. You simply attach it to a chart and allow it to trade based on the strategy.
+        </p>
+        </div>
+        
+        </div>
+        
+        </div>
+        
+        </section>
+
+        <section class="testimonials">
+
+            <h2>Trader Reviews</h2>
+            
+            <div class="testimonial-grid">
+            
+            <div class="testimonial">
+            
+            <p>
+            "This EA transformed my trading. The breakout strategy catches strong moves."
+            </p>
+            
+            <h4>- Michael T.</h4>
+            
+            </div>
+            
+            <div class="testimonial">
+            
+            <p>
+            "I've tested many bots, this one has a very stable equity curve."
+            </p>
+            
+            <h4>- Sarah L.</h4>
+            
+            </div>
+            
+            <div class="testimonial">
+            
+            <p>
+            "Excellent risk management and easy to install."
+            </p>
+            
+            <h4>- David R.</h4>
+            
+            </div>
+            
+            </div>
+            
+            </section>
+
+            <section class="disclaimer">
+
+                <h2>Risk Disclaimer</h2>
+                
+                <p>
+                Trading Forex and CFDs involves significant risk and may
+                not be suitable for all investors. Past performance does
+                not guarantee future results.
+                </p>
+                
+                </section>
+
+
+<footer>
+
+<p>© 2026 HybridBreakoutEA</p>
+
+</footer>
+<div class="sticky-buy">
+
+    <a href="#pricing">Buy HybridBreakoutEA</a>
+    
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
